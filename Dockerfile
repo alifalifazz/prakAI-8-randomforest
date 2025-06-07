@@ -17,5 +17,5 @@ COPY . .
 # Expose port yang Railway gunakan (biasanya 8080)
 EXPOSE 8080
 
-# Perintah menjalankan app, sesuaikan dengan app kamu
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
+# Perintah menjalankan app, pastikan pointing ke "application"
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:application"]
